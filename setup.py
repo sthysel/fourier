@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 import io
 from glob import glob
-
 from os.path import basename, dirname, join, splitext
+
 from setuptools import find_packages, setup
 
 
@@ -20,7 +20,14 @@ setup(
     description='Draw Fourier frequency decomposition',
     long_description=read('README.md'),
     install_requires=[
+        'pygame',
+        'click',
         ],
+    entry_points={
+        'console_scripts': [
+            'fourier=fourier.cli:cli',
+        ],
+    },
     author='sthysel',
     author_email='sthysel@gmail.com',
     url='https://github.com/sthysel/fourier',
