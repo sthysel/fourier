@@ -7,9 +7,9 @@ import pygame
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
-pixels = []
-
 TAU = 2 * math.pi
+
+pixels = []
 
 
 def draw_points(points):
@@ -22,9 +22,9 @@ def draw_points(points):
 def draw_circles(terms: int, radius: int):
     win = pygame.display.get_surface()
     w, h = win.get_size()
-    X, Y = w // 2, h
+    X, Y = w // 2, h // 2
     tick = pygame.time.get_ticks() / 1000
-    centres = [(180, w // 2)]
+    centres = [(radius + 200, h // 2)]
     freq = 20
     xx, yy = 0, 0
     for k in range(terms):
@@ -49,7 +49,7 @@ def redraw(font, terms: int, radius: int):
     w, h = win.get_size()
     win.fill(BLACK)
     text = font.render(f'{terms}', 1, WHITE)
-    win.blit(text, (w // 2 - text.get_width() // 2, h - 70))
+    win.blit(text, (w // 2 - text.get_width() // 2, 50))
     draw_circles(terms, radius)
     draw_points(pixels)
     pygame.display.update()
