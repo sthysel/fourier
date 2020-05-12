@@ -10,7 +10,7 @@ recently was a post from [DineshNG](https://github.com/DineshNG) in
 Below is basically a summary of that post. The repo contains my own re-worked
 version of the visualization.
 
-# Other Fourier series and transform resources
+# Fourier series and transform resources
 
 3Blue1Brown [has an excellent video on the
 topic](https://www.youtube.com/watch?v=spUNpyF58BY) explaining Fourier
@@ -37,10 +37,29 @@ worth your time to work with these materials once you've gained a decent
 front-end understanding from the first two sources I listed.
 
 
-# Dependencies
+# Install
 
 To install pygame  Arch you need to install these dependencies:
 
 ```
 $ yay -S sdl_image sdl_mixer sdl_ttf portmidi
+```
+
+Now do `pip install -e .` in a virtualenv as usual. Type `fourier` to get the
+animation.
+
+You can set a few parameters like these:
+
+```
+❯ fourier --help
+pygame 1.9.6
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Usage: fourier [OPTIONS]
+
+Options:
+  -t, --terms INTEGER   Number of terms  [default: 3]
+  -r, --radius INTEGER  Radius  [default: 100]
+  --version             Show the version and exit.
+  --help                Show this message and exit.
+  
 ```
