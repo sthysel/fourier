@@ -12,8 +12,6 @@ version of the visualization.
 
 # Fourier series and transform resources
 
-![Fourier](pics/fourier.png)
-
 3Blue1Brown [has an excellent video on the
 topic](https://www.youtube.com/watch?v=spUNpyF58BY) explaining Fourier
 transforms visually like this
