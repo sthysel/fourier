@@ -39,11 +39,14 @@ front-end understanding from the first two sources I listed.
 
 # Install
 
-To install pygame  Arch you need to install these dependencies:
+To install pygame on Arch Linux you need to install these dependencies:
 
 ```
 $ yay -S sdl_image sdl_mixer sdl_ttf portmidi
 ```
+
+Other systems may have pygame already, the setup below should install all
+dependencies.
 
 Now do `pip install -e .` in a virtualenv as usual. Type `fourier` to get the
 animation.
