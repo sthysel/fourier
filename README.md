@@ -5,7 +5,7 @@
 I first saw this representation of a Fourier series from a senior student's
 dissertation at Uni in 1995. Through the years it occasionally cropped up. Most
 recently was a post from [DineshNG](https://github.com/DineshNG) in
-[r/Python](reddit.com/r/Python/)
+[r/Python](https://reddit.com/r/Python/)
 
 Below is basically a summary of that post. The repo contains my own re-worked
 version of the visualization.
