@@ -20,7 +20,7 @@ transforms visually like this
 well-coded and easy to use. You can probably run through the whole page in 15
 minutes or less, depending on how much you choose to interact.
 
-Mary Boas' ~Mathematical Methods for the Physical Sciences~. A world-class
+Mary Boas' *Mathematical Methods for the Physical Sciences*. A world-class
 resource in math "crash courses" if you will, this book will be a lifelong
 resource for learning and relearning heavy math topics that you will use for the
 rest of your academic life. There's a lengthy section on Fourier Series and one
