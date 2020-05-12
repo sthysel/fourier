@@ -1,6 +1,8 @@
-# Draws Fourier's frequency decompositions (Version 0.0.1)
+# Fourier's frequency decompositions (Version 0.0.1)
 
 ![Fourier](pics/fourier.png)
+
+
 
 # Dependencies
 
