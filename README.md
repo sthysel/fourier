@@ -1,6 +1,6 @@
 # Fourier's frequency decompositions (Version 0.0.1)
 
-![Fourier](pics/fourier.mkv)
+![Fourier](pics/fourier.gif)
 
 I first saw this representation of a Fourier series from a senior student's
 dissertation at Uni in 1995. Through the years it occasionally cropped up. Most
