@@ -1,6 +1,6 @@
 # Fourier's frequency decompositions (Version 0.0.1)
 
-![Fourier](pics/fourier.png)
+![Fourier](pics/fourier.mkv)
 
 I first saw this representation of a Fourier series from a senior student's
 dissertation at Uni in 1995. Through the years it occasionally cropped up. Most
@@ -11,6 +11,8 @@ Below is basically a summary of that post. The repo contains my own re-worked
 version of the visualization.
 
 # Fourier series and transform resources
+
+![Fourier](pics/fourier.png)
 
 3Blue1Brown [has an excellent video on the
 topic](https://www.youtube.com/watch?v=spUNpyF58BY) explaining Fourier
@@ -31,10 +33,11 @@ Stanford](https://www.youtube.com/playlist?list=PLB24BC7956EE040CD). It's all
 about the Fourier Transform, and it's a very inviting course that will leave you
 entirely without questions or confusion by the end. By far the best resource on
 this list, but it would easily take you weeks to get through the 30 lectures,
-each I think 50 minutes long. Also, I believe this is the set of lecture notes
-and practice problems that goes along with this lecture series. It would be well
-worth your time to work with these materials once you've gained a decent
-front-end understanding from the first two sources I listed.
+each I think 50 minutes long. Also, I believe [this is the set of lecture notes
+and practice problems that goes along with this lecture
+series](https://see.stanford.edu/materials/lsoftaee261/book-fall-07.pdf). It
+would be well worth your time to work with these materials once you've gained a
+decent front-end understanding from the first two sources I listed.
 
 
 # Install
