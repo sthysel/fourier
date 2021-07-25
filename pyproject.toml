@@ -3,7 +3,7 @@ name = "fourier"
 version = "0.1.0"
 description = "Fourier decomposition visualization"
 authors = ["sthysel <sthysel@gmail>"]
-license = "MIT"
+license = "GPLv3"
 
 packages = [
     { include = "fourier", from = "src" }
