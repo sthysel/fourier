@@ -65,5 +65,5 @@ Options:
   -r, --radius INTEGER  Radius  [default: 100]
   --version             Show the version and exit.
   --help                Show this message and exit.
-  
+
 ```

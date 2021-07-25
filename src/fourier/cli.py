@@ -23,7 +23,7 @@ def draw_circles(terms: int, radius: int):
     tick = pygame.time.get_ticks() / 1000
     centres = [(radius + 200, h // 2)]
     freq = 20
-    xx, yy = 0, 0
+    xx, yy = 0.0, 0.0
     for k in range(terms):
         n = 2 * k + 1  # change for different functions
         _radius = round(radius * (4 / (n * (math.tau / 2))))
