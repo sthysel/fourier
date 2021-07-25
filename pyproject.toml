@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "fourier"
+version = "0.1.0"
+description = "Fourier decomposition visualization"
+authors = ["sthysel <sthysel@gmail>"]
+license = "MIT"
+
+packages = [
+    { include = "fourier", from = "src" }
+]
+
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Operating System :: Unix',
+    'Operating System :: POSIX',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Programming Language :: Python :: Implementation :: PyPy',
+    'Topic :: Utilities'
+]
+
+[tool.poetry.scripts]
+fourier = "fourier.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pygame = "^2.0.1"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+bumpversion = "^0.6.0"
+epc = "^0.0.5"
+importmagic = "^0.1.7"
+pytest = "^6.2.4"
+tox = "^3.24.0"
+black = "^21.7b0"
+pre-commit = "^2.13.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

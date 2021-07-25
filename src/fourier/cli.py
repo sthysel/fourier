@@ -1,13 +1,10 @@
 import math
 
 import click
-
 import pygame
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
-
-TAU = 2 * math.pi
 
 pixels = []
 
@@ -29,8 +26,8 @@ def draw_circles(terms: int, radius: int):
     xx, yy = 0, 0
     for k in range(terms):
         n = 2 * k + 1  # change for different functions
-        _radius = round(radius * (4 / (n * (TAU / 2))))
-        angle = round(TAU * freq * tick * n)
+        _radius = round(radius * (4 / (n * (math.tau / 2))))
+        angle = round(math.tau * freq * tick * n)
         xx = centres[k][0] + math.cos(math.radians(angle)) * _radius
         yy = centres[k][1] + math.sin(math.radians(angle)) * _radius
         pygame.draw.circle(win, WHITE, centres[k], _radius, 1)
@@ -48,7 +45,7 @@ def redraw(font, terms: int, radius: int):
     win = pygame.display.get_surface()
     w, h = win.get_size()
     win.fill(BLACK)
-    text = font.render(f'{terms}', 1, WHITE)
+    text = font.render(f"{terms}", 1, WHITE)
     win.blit(text, (w // 2 - text.get_width() // 2, 50))
     draw_circles(terms, radius)
     draw_points(pixels)
@@ -71,26 +68,26 @@ def get_terms(terms):
 
 @click.command(context_settings=dict(max_content_width=120))
 @click.option(
-    '-t',
-    '--terms',
+    "-t",
+    "--terms",
     default=3,
-    help='Number of terms',
+    help="Number of terms",
     show_default=True,
 )
 @click.option(
-    '-r',
-    '--radius',
+    "-r",
+    "--radius",
     default=100,
-    help='Radius',
+    help="Radius",
     show_default=True,
 )
 @click.version_option()
 def cli(terms, radius):
     pygame.init()
-    font = pygame.font.SysFont('consolas', 30, True)
+    font = pygame.font.SysFont("consolas", 30, True)
     window_width, window_height = 1200, 800
     pygame.display.set_mode((window_width, window_height))
-    pygame.display.set_caption('Fourier')
+    pygame.display.set_caption("Fourier")
     clock = pygame.time.Clock()
 
     while True:
