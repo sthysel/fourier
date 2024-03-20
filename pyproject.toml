@@ -35,7 +35,7 @@ epc = "^0.0.5"
 importmagic = "^0.1.7"
 pytest = "^6.2.4"
 tox = "^3.24.0"
-black = "^21.7b0"
+black = "^24.3"
 pre-commit = "^2.13.0"
 
 [build-system]
